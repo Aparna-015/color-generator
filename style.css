@@ -29,6 +29,11 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.row-options :where(.columns,.colors){
+    width: calc(100% /2 -12px);
+}
+
+
 .select select{
     padding: 8px 10px;
     border: 1px solid gray;
@@ -39,4 +44,40 @@ body {
 
 .colors input{
     width: 41px;
+    padding: 0;
+    margin-top: 0;
+
+}
+
+.button-row  {
+   
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    gap:5px;
+    margin: 10px;
+    padding: 15px 0;
+    outline: none;
+  
+
+}
+textarea{
+    padding: 20px 10px;
+
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1.01rem;
+}
+
+.button-row button{
+    width: 200px;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+.add{
+        background-color:gray;
+
 }
